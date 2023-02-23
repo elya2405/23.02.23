@@ -52,3 +52,6 @@ addList.addEventListener("click", function () {
   newList.textContent = "lorem";
   list.append(newList);
 });
+
+let example18th = document.querySelector("#example-1");
+let example1Paragraph = document.querySelector("#example-1-target");
