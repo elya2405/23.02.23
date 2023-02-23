@@ -8,18 +8,15 @@ example2.style.color = "white";
 console.log(example2);
 
 let example3 = document.querySelector("#example-id");
-
+example3.style.backgroundColor = "url(picture.png)";
 console.log(example3);
-//example3.style.backgroundImage = "url(./picture.png)";
 
 let example4 = document.querySelector("p:nth-child(4");
-
-console.log(example4);
-
 example4.style.width = "200px";
 example4.style.height = "200px";
 example4.style.margin = "30px";
 example4.style.transform = "rotate(-45deg)";
+console.log(example4);
 
 let list = document.createElement("ul"); //создает объект
 document.body.append(list);
@@ -47,4 +44,11 @@ addParagraph.addEventListener("click", function () {
   newParagraph.textContent =
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non totam,corporis laudantium cum delectus soluta?";
   article.append(newParagraph);
+});
+
+let addList = document.querySelector("#add-list");
+addList.addEventListener("click", function () {
+  let newList = document.createElement("li");
+  newList.textContent = "lorem";
+  list.append(newList);
 });
